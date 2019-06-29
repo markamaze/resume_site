@@ -1,0 +1,16 @@
+{
+	"name": "resume_site_client",
+	"version": "0.0.1",
+	"description": "resume_site_client",
+	"main": "/server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"author": "Mark A Maze",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.17.1",
+		"path": "^0.12.7"
+	},
+	"devDependencies": {}
+}
