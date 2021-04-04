@@ -44,7 +44,7 @@
                 <ul class="nav navbar-nav navbar-right">
                   <li class="active"><a href="#main-header">Home</a></li>
                   <li class=""><a href="#portfolio">Portfolio</a></li>
-                  <li class=""><a href="#experience">Experience</a></li>
+                  <li class=""><a href="#resume">Resume</a></li>
                   <li class=""><a href="#contact">Contact Info</a></li>
                 </ul>
               </div>
@@ -79,49 +79,57 @@
     <!--/ HEADER-->
     <!---->
 
+    <section id="about" class="section-padding wow fadeInUp delay-05s">
+      <div class="">
+        <header class="section_header">Introduction</header>
+        <div class="pad-bt15">
+          Write a short paragraph or two about me here.
+        </div>
+      </div>
+    </section>
 
     <section id="portfolio" class="section-padding wow fadeInUp delay-05s">
       <div class="">
         <header class="section_header">Portfolio Projects</header>
         <p class="pad-bt15">Since 2016 I have been working to build my skillset as a software developer. My primary work has been through the development of learning projects with a mindset to seek understanding in all aspects of creating a complete software system.</p>
         <div class=" pad-bt15">
-          <h3 class="text-center">FudgetBudget</h3>
+          <h4 class="text-center">FudgetBudget</h4>
           
-          <div>Project Overview</div>
+          <h5>Project Overview</h5>
             <p>
-              FudgetBudget is a personal budgeting tool designed to show a running balance of future transactions. By inputing all your income and expenses, and defining how often they occur, transactions are projected into the future and the resulting balance calculated. These projections can be individually adjusted to achieve your financial goals/needs; whether they be to maintain a minimum balance, plan for future expenses, handle unexpected expenses, identifying expendable funds, and more. 
+              FudgetBudget is a personal budgeting tool designed to show a running balance of future transactions. These projected transactions can be individually adjusted to achieve your financial goals/needs; whether they be to maintain a minimum balance, plan for future expenses, handle unexpected expenses, identifying expendable funds, and more. 
             </p>
 
-          <div>Technical Overview</div>
+          <h5>Technical Overview</h5>
             <p>
-              FudgetBudget was developed using the Android Framework, implementing a form of Model-View-ViewModel architecture with LiveData updates. The primary object of the program is the Transaction, from which Projections are created, from which Records are created, and the balance is based on the sum of all Records.
+              FudgetBudget was developed using the Android Framework, implementing a form of Model-View-ViewModel architecture with LiveData updates. The main data object of the program is the Transaction, from which Projections are created, from which Records are created, and the balance is based on the sum of all Records.
             </p>
-          <div>Demo</div>
-            <p>(unfortunatly I'm not skilled enough to embed an Android app with the time I have)</p>
+          <h5></h5>
             <p>(add some screenshots of the app)</p>
-            <p>(add a link to allow others to download the FudgetBudget.apk file)</p>
+            <p>(add link to repository)</p>
+            <p>(add a link to download the apk file)</p>
           
         </div>
         <div class="  pad-bt15">
-          <h3 class="text-center">Simpledoc</h3>
-          <div>Project Overview</div>
+          <h4 class="text-center">Simpledoc</h4>
+          <h5>Project Overview</h5>
           <div class="row">
             <div class="bx-wrapper">
               <div class="col-md-6 col-sm-12">
                 <p>
-                  The purpose of Simpledoc is to model a heirarchical organization and the roles within it, for use with modular tools designed to automate programatic tasks of the organization. 
+                  The purpose of Simpledoc is to model an organization and the roles within it, to use with modular tools designed to automate programatic tasks for the organization. The modular tools are used for subsets of the model and can be interconnected with multiple tools.
                 </p>
                 <p>  
-                  For example: the documentation module allows for creation of a form which can be assigned to people with a specific role, of a specific set of the organization, to be completed at a specific frequency. The module would handle prompting the appropriate users assigned to those roles, to complete the form when it is due. It would prompt the user's supervisor if it is out of compliance. If the form requires review by another with a specific role after submission, that person would be notified of the need for their review. This requires no time by the supervisor to know the state of compliance, where it would otherwise require regular monitoring by the supervisor of the rule crossreferenced with submitted paperwork.
+                  For example: the documentation module allows for creation of a form which can be assigned to people with a specific role, of a specific set of the organization, to be completed at a specific frequency. The module would handle prompting the appropriate users assigned to those roles, to complete the form when it is due. It would prompt the user's supervisor if it is out of compliance or if it requires further action. Knowing the state of compliance for the form requires no time by the supervisor, where they would otherwise be required to crossreference paperwork with the business requirements.
                 </p>
                 <p>
-                  Modular tools to be used with the organization model may include: communications, documentation, task management, training material, scheduling, and more.
+                  Other modular tools that may be included: communications, documentation, task management, training material, scheduling, and more.
                 </p>
               </div>
             </div>
           </div>
   
-          <div>Technical Overview</div>
+          <h5>Technical Overview</h5>
           <div class="row">
             <div class="bx-wrapper">
               <div class="col-md-6 col-sm-12">
@@ -130,13 +138,15 @@
             </div>
           </div>
   
-          <div>Demo</div>
+          <h5>Demo</h5>
           <div class="row">
-            <div class="bx-wrapper">
+            <div class="bx-wrapper col-md-6 col-sm-12">
               <!-- <iframe src="https://simpledoc.herokuapp.com" width="100%" style="min-height: 300px;"></iframe> -->
               <div class="">
                 Simpledoc is only partially functional at this time. There is a lot of work behind the UI where I developed my knowledge of a full stack application and designed the business and technical logic of how this idea could be implemented. It was my initial learning project I worked on until I felt I had the skills to develop a smaller project to functional completion in preperation for transitioning into a career in software development.
               </div>
+              <div>(include link to repository)</div>
+              <div>(include diagrams of an example model and module implementation logic</div>
             </div>
    
         </div>
@@ -145,12 +155,12 @@
 
 
 
-    <section id="experience" class="section-padding wow fadeInUp delay-05s">
-      <header class="section_header">Experience</header>
+    <section id="resume" class="section-padding wow fadeInUp delay-05s">
+      <header class="section_header">Resume</header>
       <div class="">
 
         <div class="">
-          <h3 class="">Technical Skills</h3>
+          <h4 class="">Technical Skills</h4>
           <div class="row pad-bt15">
             <div class="bx-wrapper">
               <div class="col-lg-3 col-md-4 col-sm-6 col-ex-12 text-center">Java</div>
@@ -165,7 +175,7 @@
         </div>
 
         <div class=" pad-bt15">
-          <h3>Software Developed</h3>
+          <h4>Software Developed</h4>
             <div>
               <p>FudgetBudget - personal budgeting program developed for Android</p>
               <p>Simpledoc - webapp for modeling any organizational heirarchy to utilize modular tools for customized automation of routine business practices</p>
@@ -174,27 +184,26 @@
         </div>
 
         <div class=" pad-bt15">
-          <h3>Free Open Source Software Contributions</h3>
+          <h4>Free Open Source Software Contributions</h4>
             <div class="text-large">AntennaPod</div>
             <div class="text-large">Organice</div>
         </div>
 
         <div class=" pad-bt15">
-          <h3>Education</h3>
+          <h4>Education</h4>
           <p>200+ quarter credit hours earned with a focus on STEM, social sciences, and communications.  I spent 2007-2009 in school full-time at Oregon Institute of Technology, but attended other colleges at various times while working. The knowledge I gained from my education developed my ability to learn, understand, and work within complex systems. Using these skills I began an independent study of software development and will continue indefinatly.</p>
         </div>
         <div class=" pad-bt15">
-          <h3>Advocates for Life Skills & Opportunity</h3>
-          <div class="">
-          <div class="col-lg-4 col-sm-12 pad-bt15">
+          <h4>Advocates for Life Skills & Opportunity</h4>
+          <div class="pad-bt15">
             <p>Portland, Oregon
             <br/>March 2010 to January 2018
             <br/>November 2003 to December 2006</p>
           </div>
-          <div class="col-lg-4 col-sm-12 pad-bt15">
+          <div class="pad-bt15">
             Positions Held: Residential Manager, Program Coordinator, Lead Staff, Direct Support Professional, Job Coach
           </div>
-          <div class="col-lg-4 col-sm-12 pad-bt15">
+          <div class="pad-bt15">
             Responsibilities included, but not limited to:
             <ul>
               <li>Provided direct support and advocacy for individuals with
@@ -206,8 +215,6 @@
               <li>Assured compliance of administrative rules and policy</li>
             </ul>
           </div>
-
-        </div>        
       </div>
 
       </div>

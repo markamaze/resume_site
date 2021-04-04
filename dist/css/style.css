@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-padding {
-  margin: 30px 30px;
+  margin: 90px 30px;
 }
 
 #loader {
@@ -126,13 +126,14 @@ HEADER
 .section_header {
   display: flex;
   color: rgba(102, 175, 233, .6);
-  /* padding: 0 .5em; */
-  /* border-radius: .2em; */
+  padding: .5em 1em;
+  border-radius: 2em;
   font-size: 1.5em;
   font-style: italic;
   font-weight: bolder;
   justify-content: center;
   font-stretch: ultra-expanded;
+  border-top: dotted;
 }
 
 .bg-color {
