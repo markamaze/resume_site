@@ -44,7 +44,7 @@
                 <ul class="nav navbar-nav navbar-right">
                   <li class="active"><a href="#main-header">Home</a></li>
                   <li class=""><a href="#portfolio">Portfolio</a></li>
-                  <li class=""><a href="#resume">Resume</a></li>
+                  <li class=""><a href="#experience">Experience</a></li>
                   <li class=""><a href="#contact">Contact Info</a></li>
                 </ul>
               </div>
@@ -61,12 +61,12 @@
               </div>
 
               <div class="col-md-6">
-                <div class="banner-info text-center wow fadeIn delay-05s">
+                <div class="container banner-info text-center wow fadeIn delay-05s">
                   <h1 class="bnr-title">Software Developer</h1>
                   <h2 class="bnr-sub-title">Mark A Maze</h2>
-                  <p class="bnr-para">
-                    Hello, I am a self-taught Software Developer.  The following content contains a learning project as my portfolio and information on it's design, as well as my relevent experience and developed skills.  I chose to learn through the building of a single learning project because I believe it is beneficial to have a more top-down education of programming, opposed to building bits and pieces of software with no cohesion and overall goals.  The project is ongoing and opensource.  I would be thrilled to have others that believe in what I'm tring to build get on board if interested.
-                  </p>
+                  <div class="bnr-para" style="font-style:italic">
+                    Dedicated to maximizing resources through the useful implementation of technology
+                  </div>
                 </div>
 
               </div>
@@ -82,84 +82,111 @@
 
     <section id="portfolio" class="section-padding wow fadeInUp delay-05s">
       <div class="container">
-        <header class="section_header">Learning Project Outcomes</header>
-        <div class="row pad-bt15">
-          <div class="bx-wrapper">
-            <div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">Advanced Java</div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">Advanced Javascript</div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">HTML & CSS</div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">SQL and non SQL Database use</div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">Object Oriented Programming</div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">REST API design</div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">Common design patterns</div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">Open/Closed Principals</div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">CI/CD Systems</div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">Development using GIT</div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">Computer Systems</div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">React with Redux & Router</div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">Basics of Test Driven Development</div>
-
-
-          </div>
+        <header class="section_header">Portfolio Projects</header>
+        <div class="container">
+          <h3 class="text-center">FudgetBudget</h3>
+          
+          <h5>Project Purpose</h5>
+            <p>
+              This Android program is a personal budgeting tool designed to show a running balance of future transactions. By inputing all your income and expenses, and defining how often they occur, transactions are projected into the future and resulting balance calculated. This allows for seeing how every planned transaction impacts your balance, opposed to lumping in income and expenses over a period of time where the total adds up but may leave you with an overdrawn account before an income actually clears.
+            </p>
+            <p>
+              FudgetBudget allows for quickly getting your budget up-to-date. In one action, you can either record or delete all past-due projections and either allow the balance to be calculated or enter a new balance yourself. As most personal budgeting is done looking forward at infrequent intervals, other personal budgeting tools can result in your budget becoming behind or inaccurate requiring you to first fix that. Fudging the balance and old transactions creates a special record which accounts for missing data and allows you to fix it any time should you want to. 
+            </p>
+            <p>
+              Projected income and expenses can be modified as needed to achieve your financial goals/needs; whether they be to maintain a minimum balance amount, plan for future expenses, adjust future expenses to allow for spending now, identifying your expendable funds, and more. 
+            </p>
+          <h5>Technical Overview</h5>
+            <p>
+              FudgetBudget was developed using the Android Framework, implementing a form of Model-View-ViewModel architecture as well as LiveData updates. The primary object of the program is the Transaction, from which Projections are created, from which Records are created. A record balance is calculated as the sum of all records.
+            </p>
+          <h5>Demo</h5>
+          
         </div>
-
-        <header class="section_header">Simpledoc Purpose</header>
-        <div class="row">
-          <div class="bx-wrapper">
-            <div class="col-md-6 col-sm-12">
-              <p>
-                The design goals of my program, Simpledoc, can essentially be described as an automated clerk (It should be called Radar really, as Cpl. Radar O'Riley was the ultimate clerk). It's goals are to model the structure and operations of a business, and implement rules and requirements of those operations.  Once the model is built, it would provide computer assistance in prompting users to complete paperwork, monitor for compliance of defined rules, and inform users when out of compliance or when action is needed.  The following video goes into more info about the goals of the program and how it can help any company use their time more efficiently and increase the quality of their business.
-              </p>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <video width="100%" controls>
-                <source src="img/simpledoc_overview.mp4" type="video/mp4">
-              </video>
+        <div class="container">
+          <h3 class="text-center">Simpledoc</h3>
+          <h5>Project Purpose</h5>
+          <div class="row">
+            <div class="bx-wrapper">
+              <div class="col-md-6 col-sm-12">
+                <p>
+                  The design goals of my program, Simpledoc, can essentially be described as an automated clerk (It should be called Radar really, as Cpl. Radar O'Riley was the ultimate clerk). It's goals are to model the structure and operations of a business, and implement rules and requirements of those operations.  Once the model is built, it would provide computer assistance in prompting users to complete paperwork, monitor for compliance of defined rules, and inform users when out of compliance or when action is needed.  The following video goes into more info about the goals of the program and how it can help any company use their time more efficiently and increase the quality of their business.
+                </p>
+              </div>
+              <!-- <div class="col-md-6 col-sm-12">
+                <video width="100%" controls>
+                  <source src="img/simpledoc_overview.mp4" type="video/mp4">
+                </video>
+              </div> -->
             </div>
           </div>
+  
+          <h5>Technical Overview</h5>
+          <div class="row">
+            <div class="bx-wrapper">
+              <div class="col-md-6 col-sm-12">
+                I have designed my program as a client/server, using React on the front-end and plain Java on the back.  I use mostly object oriented methods with a little functional thrown in, where the back-end is essentially a Model, the front-end the View, and the controller is intermingled within the two.  The overall architecture of my business logic is designed to be a collection of Modules which will provide services with an API being responsible for the communication between the modules.  The primary module used to model the organizational structure and define the relationships of the company, is called the Agency Module.  The Forms module is the first additional module I'm building right now, which is responsible for form-building and data-collection.  Please see the following videos for more in depth discussion of my designs as they currently exist.
+              </div>
+              <div class="col-md-6 col-sm-12">
+                videos go here
+              </div>
+            </div>
+          </div>
+  
+          <h5>Demo</h5>
+          <div class="row">
+            <div class="bx-wrapper">
+              <div class="col-md-6">
+                This is my program as it currently exists on it's home site, https://simpledoc.herokuapp.com.  I do need to acknowledge that it is a work in progress, and much of my work up to this point has been with working out business logic, designing the overall architecture, building up the backend API, as well as learning everything along the way.  At this point I am working on continuing to get the logic I've designed implemented on the front-end.
+                <br/>As of now, the front end only displays a set of Agent Objects that exist in the database, as I am building up the tools to perform CRUD operations on the data needed for the Agency Module.
+              </div>
+              <iframe src="https://simpledoc.herokuapp.com" height="400px" width="100%"></iframe>
+            </div>
+   
         </div>
-
-        <header class="section_header">Simpledoc Design</header>
-        <div class="row">
-          <div class="bx-wrapper">
-            <div class="col-md-6 col-sm-12">
-              I have designed my program as a client/server, using React on the front-end and plain Java on the back.  I use mostly object oriented methods with a little functional thrown in, where the back-end is essentially a Model, the front-end the View, and the controller is intermingled within the two.  The overall architecture of my business logic is designed to be a collection of Modules which will provide services with an API being responsible for the communication between the modules.  The primary module used to model the organizational structure and define the relationships of the company, is called the Agency Module.  The Forms module is the first additional module I'm building right now, which is responsible for form-building and data-collection.  Please see the following videos for more in depth discussion of my designs as they currently exist.
-            </div>
-            <div class="col-md-6 col-sm-12">
-              videos go here
-            </div>
-          </div>
-        </div>
-
-        <header class="section_header">Simpledoc Demo</header>
-        <div class="row">
-          <div class="bx-wrapper">
-            <div class="col-md-6 col-sm-12">
-              This is my program as it currently exists on it's home site, https://simpledoc.herokuapp.com.  I do need to acknowledge that it is a work in progress, and much of my work up to this point has been with working out business logic, designing the overall architecture, building up the backend API, as well as learning everything along the way.  At this point I am working on continuing to get the logic I've designed implemented on the front-end.
-              <br/>As of now, the front end only displays a set of Agent Objects that exist in the database, as I am building up the tools to perform CRUD operations on the data needed for the Agency Module.
-            </div>
-            <iframe src="https://simpledoc.herokuapp.com" height="400px" width="100%"></iframe>
-          </div>
       </div>
     </section>
 
 
 
-    <section id="resume" class="section-padding wow fadeInUp delay-05s">
+    <section id="experience" class="section-padding wow fadeInUp delay-05s">
+      <header class="section_header">Experience</header>
       <div class="container">
-        <header class="section_header">Experience</header>
-        <div class="row">
+
+        <div class="container">
+          <h3 class="">Technical Skills</h3>
+          <div class="row pad-bt15">
+            <div class="bx-wrapper">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">Java</div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">Javascript</div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">HTML & CSS</div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">SOLID development principals</div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">REST API design</div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">Collaboration using GIT</div>
+  
+  
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <h3>Free Open Source Software Contributions</h3>
+            <div class="text-large">AntennaPod</div>
+            <div class="text-large">Organice</div>
+        </div>
+
+        <div class="container">
           <h3>Software Development</h3>
-          <p>Since 2016 I have been working daily on enhancing my software development skillset. My portfolio project, Simpledoc, has been the primary area of directing my learning. It has led to understanding of how to work on a full stack application.  A particular concept I have been following, is at this point of my career to learn about everything within scope of building a project in order to enhance my overall understanding without just focusing on a specific area.  This has provided me with a higher level of understanding of why the more specific needs within a large scale application are what they are.  I have taken the approach of not simply putting the code that works, but to dig deep and understand why it is needed and how to apply the tools in any other context.  This is with the intent of becoming a more complete developer, with the ability to work in any context with any set goals.  As I grow as a developer it is my intention to solidify my skills and narrow my focus in whatever area is needed for whatever I am working on</p>
+          <p>Since 2016 I have been working daily on enhancing my software development skillset. My primary work has been through the development of software I designed to solve real-world problems. These learning projects have guided me as I continuously evaluate where I am relative to my goal and finding the questions and answers that allowed me to progress in my understanding and skill development.</p>
         </div>
-        <div class="row">
+        <div class="container">
           <h3>Education</h3>
-          <p>200+ quarter credit hours earned in Engineering, Math, Science, Communications.  I spent 2007-2009 in school full-time, mostly at Oregon Institute of Technology, but also went off and on while working full-time at various points.  After a period of time studying Economics at Portland State University, I decided to persue my goals outside of collage.  Shortly after that was when I found that an independent persuit of a career in Softare Development was just what I was looking for.  I have always loved learning, always been drawn to solving logical problems, and always found myself wanting to work with technology.  Seeing that software development and work in technology is a continuous persuit of knowledge and problem solving, I knew it was for me and I have spent every day since working on developing my skillset.  The knowledge I gained from my years of going to college off and on, was invaluable.  I learned how I learn and apply myself best, how to approach problems, how to utilize resources.  Though I didn't finish any degree, I gained a lot from that time and am very confident in my ability to learn, adapt, grow, problem solve.  I have learned how to look at a problem and expand the view upward and downward, seeking both a top-down and bottom-up understand.</p>
+          <p>200+ quarter credit hours earned with a focus on STEM, social sciences, and communications.  I spent 2007-2009 in school full-time at Oregon Institute of Technology, but attended other colleges at various times while working. The knowledge I gained from my education developed my ability to learn, understand, and work within complex systems. Using these skills I began an independent study of software development and will continue indefinatly.</p>
         </div>
-        <div class="row">
+        <div class="container">
           <h3>Advocates for Life Skills & Opportunity</h3>
         </div>
-        <div class="row">
+        <div class="container">
           <div class="col-lg-4 col-sm-12 pad-bt15">
             <p>Portland, Oregon
             <br/>March 2010 to January 2018
@@ -200,6 +227,9 @@
           </div>
           <div class="col-lg-3 col-sm-6 col-xs-12 pad-bt15">
             Github: http://github.com/markamaze
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12 pad-bt15">
+            LinkedIn: (link to linkedIn profile here)
           </div>
         </div>
       </div>
