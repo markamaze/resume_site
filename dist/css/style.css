@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-padding {
-  padding: 60px 30px;
+  margin: 30px 30px;
 }
 
 #loader {
@@ -117,7 +117,7 @@ HEADER
 ***********************************/
 
 .header {
-  background: url('../img/bg-banner02.jpg') no-repeat fixed;
+  background: url('../img/banner.jpg') no-repeat fixed;
   background-size: cover;
   min-height: 650px;
   position: relative;
@@ -125,20 +125,23 @@ HEADER
 
 .section_header {
   display: flex;
-  background-image:linear-gradient(to left, #495469, #fff);
-  color: #495469;
-  padding: 0 0 0 1em;
-  border-radius: .2em;
+  color: rgba(102, 175, 233, .6);
+  /* padding: 0 .5em; */
+  /* border-radius: .2em; */
   font-size: 1.5em;
   font-style: italic;
   font-weight: bolder;
-  text-align: center;
+  justify-content: center;
+  font-stretch: ultra-expanded;
 }
 
 .bg-color {
   background-color: rgba(0, 0, 0, 0.5);
   min-height: 650px;
 }
+/* section {
+  background-color: rgba(102, 175, 233, .6);
+} */
 
 #main-header {}
 
