@@ -40,7 +40,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-padding {
-  margin: 90px 30px;
+  padding: 30px 0px;
+  background-image: linear-gradient(to bottom, #495469, rgba(0,0,0,0.5));
 }
 
 #loader {
@@ -125,7 +126,7 @@ HEADER
 
 .section_header {
   display: flex;
-  color: rgba(102, 175, 233, .6);
+  color: rgba(0,0,0,0.5);
   padding: .5em 1em;
   border-radius: 2em;
   font-size: 1.5em;
