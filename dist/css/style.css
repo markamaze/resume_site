@@ -134,7 +134,8 @@ HEADER
   font-weight: bolder;
   justify-content: center;
   font-stretch: ultra-expanded;
-  border-top: dotted;
+  border-bottom: dotted;
+  margin-bottom: 1em;
 }
 
 .bg-color {
