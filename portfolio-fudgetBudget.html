@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>About FudgetBudget</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.1.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Close open portfolio project ======= -->
+  <div class="container">
+    <h2 class="mt-5 fw-bold">Fudget Budget</h2>
+    <a href="/index.html#portfolio"><i class="bi bi-x mobile-nav-toggle"></i></a>
+</div>
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-md-8">
+            <div class="portfolio-description">
+              <h2>Summary</h2>
+              <p>
+                Fudget Budget is a personal budgeting tool built for Android.  Enter income & expense transactions and the frequency they occur, and those are projected out to calculate your future account balance with each transaction.
+              </p>
+            </div>        
+            <div class="portfolio-details-slider swiper-container">
+              <div class="swiper-wrapper align-items-center">
+
+                <!--    replace images with screenshots  -->
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/fudgetBudget/Screenshot_20210407_194635.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/fudgetBudget/Screenshot_20210407_194720.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/fudgetBudget/Screenshot_20210407_194649.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="assets/img/portfolio/fudgetBudget/Screenshot_20210407_194753.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/portfolio/fudgetBudget/Screenshot_20210407_194837.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>                
+            <div class="portfolio-description">
+              <h2>User Details</h2>
+              <p>
+                To get started, go to the Transactions tab and enter all regular income and expences. These are the main transactions which are used to project the budget.</p>
+              <p>
+                When transactions are entered, go to the Budget tab. You will see your transactions projected out by date here. Each one will have a calculated balance at the end. Settings are available to adjust months projected and set a minimum balance threshold.</p>
+              <p>
+                Any projected transactions due or overdue will be emboldened, and can be recorded. Future items highlighted show the projected balance is either below the threshold or below zero.</p>
+              <p>
+                Each projected transaction can be modified as needed. This allows for making changes to assure a future balance doesn't go low, or to maximize current expendable income, or for whatever is needed to make your budget work.</p>
+              <p>
+                If you work out your budget, then don't come back to the app for a while and find it way behind or inaccurate, you can easily fudge the budget and spend no time getting it ready for planning. In the settings of the Budget tab, you can get everything up to date in one step. Just check whether you want to record or delete all past due projections, and if you want to calculate or manually set your new current balance. Submit and your budget is instantly current.</p>
+
+
+            </div>
+            <div class="portfolio-description">
+              <h2>Technical Details</h2>
+              <p>
+                The model for this program is built around the Transaction, from which ProjectedTransactions and RecordedTransactions are derived. With Transactions created, ProjectedTransactions are created out to number of months defined by a setting value. Those ProjectedTransactions are then displayed, by date, with a calculated balance displayed with it. When the date of a transaction is today or past, the user can "record" the projected transaction. The RecordedTransactions are stored, and summed together for the current balance.</p>
+              <p>
+                Each ProjectedTransaction can be adjusted from the values it was derived from, and RecordedTransactions can also be altered if needed. Altered projections can be reset to their original values individually, by transaction, or for all transactions.</p>
+              <p>
+                There is a setting for a balance threshold, which is used with the lowest projected balance in order to calculate the expendable funds given the current balance. If any projected balances are below the threshold, they will appear highlighted, and the expendable funds will be zero. This allows the user to easily see if their current budget will cause them to get a low balance, overdraw their account, or how much they can spend now without going below their threshold at any projected time.</p>
+              <p>
+                The action to "fudge the budget", simply records or deletes all due/pastdue ProjectedTransactions. The current balance is still calculated the same, however if the user chooses to set a new balance, this is done by creating a RecordedTransaction for the difference between what is calculated and what the user sets the new balance to.</p>
+
+              <p>
+                </p>
+            </div>
+            <div class="portfolio-description">
+              <h2>Experience Gained</h2>
+              <p>
+                With this project, I got to go deeper into developing an Android application with multiple activities. I had to find understanding of the Model-View-ViewModel architecture along with the implementation of LiveData objects. I also gained more experience working with the UI interface and referenced data.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="portfolio-info">
+              <h5>Technical Info</h5>
+              <ul>
+                <li class="text-center">Java, Android</li>
+                <li class="text-center">Model-View-ViewModel</li>
+                <li class="text-center">LiveData</li>
+                <li class="text-center fw-light fst-italic">*project functional, with some bugs and not-yet-working features*</li>
+              </ul>
+            </div>
+            <div class="portfolio-info d-flex flex-column">
+              <h5>Project Links</h5>
+              <a href="https://github.com/markamaze/FudgetBudget">code repository</a>
+              <a href="/assets/downloadable/fudgetBudget/app-release.apk" download>download apk</a>
+              <a href="https://appetize.io/app/z20ccxqtkr43200w6g6dj07xfm?device=nexus5&scale=75&orientation=portrait&osVersion=8.1">online demo</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
