@@ -60,22 +60,11 @@
 
               <!--    replace images with screenshots  -->
               <div class="swiper-slide">
-                <img src="" alt="">
+                <img src="assets/img/portfolio/mindYourBusiness/Agency-Model.PNG" alt="">
               </div>
 
               <div class="swiper-slide">
-                <img src="" alt="">
-              </div>
-
-              <div class="swiper-slide">
-                <img src="" alt="">
-              </div>
-
-              <div class="swiper-slide">
-                  <img src="" alt="">
-              </div>
-              <div class="swiper-slide">
-                  <img src="" alt="">
+                <img src="assets/img/portfolio/mindYourBusiness/Form-Model.PNG" alt="">
               </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -84,15 +73,19 @@
           <div class="col-md-8">
             <div class="portfolio-description">
                 <h2>User Details</h2>
-                <p>Initial user setup for this project requires first building the model of the agency. The first level of the model is the agency itself. From that, however the agency is organized, the structure is built as a tree. For example: an agency may have multiple departments, which would be added to the main agency. Then each department may have different programs it oversees.</p>
+                <p>Initial user setup for this project requires first building the model of the agency. To do this, a set of Tags, Roles, and Users must be created first. From there you would build the structure of the organization, and define the actors of each part of the organization. The structures and actors will use the Tags and Roles, and users are assigned to available roles of a structure. This forms a model containing all the relationships of the organization and those who run it with their different roles and positions.</p>
+                <p>The next piece of setup is to create and define the business processes available in the modules. For example: all paperwork required would be built in the Forms module, defining the rules of what needs to be completed, what roles have access to what parts, how often the form should be submitted, etc. Or create different training components with the Training module and define what parts of the organization require it, and what roles, and how often retraining should occur, etc.</p>
+                <p>Once the organizational model is built, and the business operation modules are created, we can subscribe any set of the model to the operations. Such as, subscribing all agents with a Management tag to the manager training, or subscribing to a form all parts of the organization which require it.</p>
+                <p>With everthing all setup, it is now very easy to monitor the defined requirements for the organization. Such as, if a specific form needs to be completed monthly for every program, instead of someone having to monitor for this personally, they are simply notified of it's requirement.</p>
+                <p>The benefit of this software over other business software is the customization of the organization and business operation data. Instead of trying to change operations to fit into what the software can do, this allows them to define a custom model, relationships, and proceedures. Further, the way the data is stored, searches can be done on any information from any records. The business can keep doing things just as they always have, but with the benefit of computer automation and aggregation of data.</p>
             </div>
             <div class="portfolio-description">
                 <h2>Technical Details</h2>
-                <p>Go into the design from a coding perspective</p>
+                <p>I built this project as a client-server with a REST API, with the backend written in JAVA and using PostgreSQL while the frontend uses Javascript with React and Redux. The basic structure of how the program works, is by creating the Agency Module, and subscribing parts of that model to objects created in the other Modules (Forms, Training, Communication, etc.). The modules other than Agency, continuously loop through all it's subscriptions, monitoring the state of the subscription. The state of the subscription determines if any action is taken, such as creating a communication if a subscription is out of compliance. </p>
             </div>
             <div class="portfolio-description">
                 <h2>Experience Gained</h2>
-                <p>go into all the growth I went through while working on this project. tons of stuff</p>
+                <p>When I started this project, I knew very little about software development. I had been doing some studying of different languages, frameworks, and concepts. But when I started actually writing code, I hardly knew what to do. I started by just trying to put some basic layout components on the screen, with some inputs and trying to capture and persist data. This led me down many, many tracks as I found many things of which to learn. My focus oscillated from a top-down approach, to a bottom-up approach as questions arose and I went from expanding on how minor implementations impacted higher-level concerns, and how overall architecture should actually be implemented. I would often look at my work and identify what didn't look like code that I'd see in others' work, and identify what I was missing. When struggling with finding a solution, I'd look beyond what I was doing and seek alternative strategies. Needless to say, this project has gone through several iterations, each more sophisticated than the last.</p>
             </div>
           </div>
 
@@ -100,10 +93,10 @@
             <div class="portfolio-info">
               <h5>Technical Info</h5>
               <ul>
-                <li class="text-center">Java, Javascript</li>
-                <li class="text-center">React, Redux, Onion Arch, OOP</li>
+                <li class="text-center">Java, Javascript, SQL</li>
+                <li class="text-center">React, Redux, OOP, Postgres</li>
                 <li class="text-center">Client-Server with REST API</li>
-                <li class="text-center fw-light fst-italic">*project has minimal functionality*</li>
+                <li class="text-center fw-light fst-italic">*project built to learn software development and is still in progress, demo site has minimal functionality at this time*</li>
               </ul>
             </div>
             <div class="portfolio-info d-flex flex-column">
